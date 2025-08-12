@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(135deg, #4a90e2 0%, #50e3c2 100%);
+  color: #fff;
+  padding-bottom: 60px;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 16px 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  text-align: center;
+  margin: 90px 0 0 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 35px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #ffd700;
+  color: #222;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #ffca28;
+}
+
+.features {
+  max-width: 1100px;
+  margin: 60px auto 0 auto;
+  padding: 0 16px 60px 16px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 32px rgba(74, 144, 226, 0.10);
+  width: 300px;
+}
+
+.card-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #4a90e2;
+}
+
+.about {
+  background: #fff;
+  padding: 60px 16px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta {
+  background: linear-gradient(135deg, #50e3c2 0%, #4a90e2 100%);
+  color: #fff;
+  text-align: center;
+  padding: 60px 16px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  font-size: 1.15rem;
+  margin-bottom: 25px;
+}
+
+footer {
+  background: #282828;
+  color: #fff;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .feature-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+    max-width: 340px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .features h2, .about h2, .cta h2 {
+    font-size: 1.5rem;
+  }
+}
